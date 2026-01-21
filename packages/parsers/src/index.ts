@@ -1,4 +1,9 @@
 // Barrel export file for parsers
 export * from './base/Parser';
 export * from './openzeppelin/OpenZeppelinParser';
-// types.ts exports are included in Parser.ts to avoid duplicate DocEntry
+export * from './alchemy/AlchemyParser';
+export * from './thirdweb/ThirdwebParser';
+export * from './move/SuiParser';
+// Cache
+export * from './cache/Cache';
+export * from './cache/RedisCache';
