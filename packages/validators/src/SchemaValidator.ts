@@ -36,7 +36,7 @@ export class SchemaValidator {
         },
         language: {
           type: 'string',
-          enum: ['solidity', 'move', 'typescript', 'rust'],
+          enum: ['solidity', 'move', 'typescript', 'javascript', 'rust', 'python'],
         },
         providers: {
           anyOf: [{ type: 'string' }, { type: 'array', items: { type: 'string' } }],
