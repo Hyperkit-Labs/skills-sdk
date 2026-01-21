@@ -63,10 +63,10 @@ npm run generate:openzeppelin
 | ------------------------------ | ------- | ---------------------------- |
 | `@hyperkitlab/skills-solidity` | 0.1.0   | OpenZeppelin Solidity skills |
 | `@hyperkitlab/skills-move`     | 0.1.0   | Sui & Aptos Move skills      |
-| `@skills-sdk/parsers`          | 0.1.0   | Web3 documentation parsers   |
-| `@skills-sdk/validators`       | 0.1.0   | 3-tier validation system     |
-| `@skills-sdk/bundler`          | 0.1.0   | SKILL.md assembler           |
-| `@skills-sdk/cli`              | 0.1.0   | Command-line tools           |
+| `@hyperkitlab/skills-parsers`    | 0.1.0   | Web3 documentation parsers   |
+| `@hyperkitlab/skills-validators` | 0.1.0   | 3-tier validation system     |
+| `@hyperkitlab/skills-bundler`    | 0.1.0   | SKILL.md assembler           |
+| `@hyperkitlab/skills-cli`        | 0.1.0   | Command-line tools           |
 
 ---
 
