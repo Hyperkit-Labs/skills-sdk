@@ -1,5 +1,4 @@
 <div align="center">
-  <h1>Skills-SDK</h1>
   <img src="public/img/Skill-sdk-banner.png" alt="Skills-SDK Banner_Image" width="100%" />
 </div>
 
