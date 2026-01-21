@@ -1,17 +1,32 @@
 import * as cheerio from 'cheerio';
 import { fetch } from 'undici';
 import { Parser, DocEntry } from '../base/Parser';
+import { ParserOptions } from '../types';
 
 export class OpenZeppelinParser implements Parser {
   private readonly baseUrl = 'https://docs.openzeppelin.com/contracts/5.x';
   private readonly githubApiUrl =
     'https://api.github.com/repos/OpenZeppelin/openzeppelin-contracts/releases/latest';
 
+  constructor(private options: ParserOptions = {}) { }
+
   async fetchLatestVersion(): Promise<string> {
+    const cacheKey = 'openzeppelin:version';
+
+    if (this.options.cache) {
+      const cached = await this.options.cache.get(cacheKey);
+      if (cached) return cached;
+    }
+
     try {
       const response = await fetch(this.githubApiUrl);
       const data = (await response.json()) as { tag_name: string };
-      return data.tag_name.replace('v', '');
+      const version = data.tag_name.replace('v', '');
+
+      if (this.options.cache) {
+        await this.options.cache.set(cacheKey, version, this.options.cacheTTL || 3600);
+      }
+      return version;
     } catch (error) {
       console.error('Failed to fetch latest OpenZeppelin version:', error);
       return '5.0.2'; // Fallback version
@@ -19,15 +34,22 @@ export class OpenZeppelinParser implements Parser {
   }
 
   async extractDocs(_url?: string): Promise<DocEntry[]> {
+    const cacheKey = 'openzeppelin:docs';
+
+    if (this.options.cache) {
+      const cached = await this.options.cache.get(cacheKey);
+      if (cached) {
+        try {
+          return JSON.parse(cached);
+        } catch (e) {
+          console.warn('Cache parse error, re-fetching');
+        }
+      }
+    }
 
     const entries: DocEntry[] = [];
 
     try {
-      // Fetch the main documentation page
-      // const response = await fetch(targetUrl);
-      // const _html = await response.text();
-      // cheerio.load(_html); // Removed: not currently used, will be needed in Phase 3
-
       // Extract contract documentation sections
       const categories = {
         'Access Control': `${this.baseUrl}/access-control`,
@@ -39,6 +61,10 @@ export class OpenZeppelinParser implements Parser {
       for (const [category, categoryUrl] of Object.entries(categories)) {
         const categoryEntries = await this.extractCategoryContracts(categoryUrl, category);
         entries.push(...categoryEntries);
+      }
+
+      if (this.options.cache && entries.length > 0) {
+        await this.options.cache.set(cacheKey, JSON.stringify(entries), this.options.cacheTTL || 86400); // 24h cache
       }
 
       return entries;
