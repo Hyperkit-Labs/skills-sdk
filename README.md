@@ -61,7 +61,7 @@ npm run generate:openzeppelin
 
 | Package                        | Version | Description                  |
 | ------------------------------ | ------- | ---------------------------- |
-| `@hyperkitlab/skills-solidity` | 5.0.2   | OpenZeppelin Solidity skills |
+| `@hyperkitlab/skills-solidity` | 0.1.0   | OpenZeppelin Solidity skills |
 | `@skills-sdk/parsers`          | 0.1.0   | Web3 documentation parsers   |
 | `@skills-sdk/validators`       | 0.1.0   | 3-tier validation system     |
 | `@skills-sdk/bundler`          | 0.1.0   | SKILL.md assembler           |
