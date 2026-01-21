@@ -1,5 +1,5 @@
 // Daily sync script - checks for doc updates and regenerates SKILL.md files
-import { OpenZeppelinParser } from '@skills-sdk/parsers';
+import { OpenZeppelinParser } from '@hyperkitlab/skills-parsers';
 import { generateOpenZeppelinSkill } from './generate-openzeppelin-skill';
 import * as fs from 'fs';
 import * as path from 'path';
