@@ -15,7 +15,7 @@ async function generateOpenZeppelinSkill() {
   const version = await parser.fetchLatestVersion();
   console.log(`   Version: ${version}`);
 
-  const entries = await parser.extractContracts();
+  const entries = await parser.extractDocs();
   console.log(`   Extracted ${entries.length} contract entries\n`);
 
   // Step 2: Assemble SKILL.md
