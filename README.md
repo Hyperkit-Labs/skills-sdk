@@ -204,8 +204,8 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ### Bounty Program
 
-- $50 per new parser (verified providers)
-- $100 for complex parsers (JS-rendered, multi-step)
+- $TBD per new parser (verified providers)
+- $TBD for complex parsers (JS-rendered, multi-step)
 
 [View Open Issues](https://github.com/Hyperkit-Labs/skills-sdk/issues)
 
