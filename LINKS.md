@@ -6,6 +6,7 @@
 
 - **Repository:** https://github.com/Hyperkit-Labs/skills-sdk
 - **Organization:** https://github.com/Hyperkit-Labs
+- **Skills Registry:** https://skills.sh/hyperkit-labs/skills-sdk
 
 ### npm
 
