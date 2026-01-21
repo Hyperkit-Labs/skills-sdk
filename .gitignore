@@ -40,10 +40,14 @@ temp/
 skills-reference/
 plan/
 .cursor/
+.gemini/
+.claude/
+.windsurf/
+.agent/
+.agents/
 
 # Cache
 .cache/
 .parcel-cache/
 .eslintcache
 .npmrc
-./../DELIVERY_SUMMARY.md
