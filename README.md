@@ -62,6 +62,7 @@ npm run generate:openzeppelin
 | Package                        | Version | Description                  |
 | ------------------------------ | ------- | ---------------------------- |
 | `@hyperkitlab/skills-solidity` | 0.1.0   | OpenZeppelin Solidity skills |
+| `@hyperkitlab/skills-move`     | 0.1.0   | Sui & Aptos Move skills      |
 | `@skills-sdk/parsers`          | 0.1.0   | Web3 documentation parsers   |
 | `@skills-sdk/validators`       | 0.1.0   | 3-tier validation system     |
 | `@skills-sdk/bundler`          | 0.1.0   | SKILL.md assembler           |
@@ -101,16 +102,17 @@ npm run generate:openzeppelin
 
 ## 🔧 Supported Providers
 
-### Current (v0.1.0)
+### Current (v1.0.0)
 
-- ✅ **OpenZeppelin Contracts v5.x** - AccessControl, ERC20, ERC721, Upgradeable
+- ✅ **OpenZeppelin Contracts v5.x** (Solidity)
+- ✅ **Alchemy API** (JavaScript/TypeScript)
+- ✅ **thirdweb SDK** (TypeScript)
+- ✅ **Sui Framework** (Move)
 
 ### Roadmap
 
-- 🔄 **Alchemy** - Account Abstraction, Bundlers, Paymasters
-- 🔄 **thirdweb** - Connect, Engine, Deployment
-- 🔄 **Sui Framework** (Move)
 - 🔄 **Aptos SDK** (Move)
+- 🔄 **Python Support**
 
 ---
 
@@ -218,8 +220,8 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ### v1.0 (Week 6)
 
-- ⏳ 3 providers (OpenZeppelin, Alchemy, thirdweb)
-- ⏳ Move language support (Sui, Aptos)
+- ✅ 3 providers (OpenZeppelin, Alchemy, thirdweb)
+- ✅ Move language support (Sui)
 - ⏳ 50+ GitHub stars
 - ⏳ 20+ npm downloads/week
 
