@@ -1,0 +1,29 @@
+{
+  "name": "@skills-sdk/bundler",
+  "version": "0.1.0",
+  "description": "SKILL.md assembler with progressive disclosure and token optimization",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "bundler",
+    "skill",
+    "markdown",
+    "templating"
+  ],
+  "author": "HyperKit Labs <Hyperkitdev@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "js-tiktoken": "^1.0.21",
+    "mustache": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/mustache": "^4.2.5",
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  }
+}

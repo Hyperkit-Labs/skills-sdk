@@ -1,0 +1,29 @@
+{
+  "name": "@skills-sdk/parsers",
+  "version": "0.1.0",
+  "description": "Web3 documentation parsers for extracting structured content from blockchain provider docs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "parser",
+    "web3",
+    "blockchain",
+    "documentation"
+  ],
+  "author": "HyperKit Labs <Hyperkitdev@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "undici": "^6.2.1",
+    "playwright": "^1.40.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  }
+}

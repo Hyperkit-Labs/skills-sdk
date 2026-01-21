@@ -1,0 +1,46 @@
+{
+  "name": "@hyperkitlab/skills-solidity",
+  "version": "0.1.0",
+  "description": "OpenZeppelin Solidity skills for AI agents - Auto-synced, validated blockchain knowledge",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "blockchain",
+    "solidity",
+    "skills",
+    "openzeppelin",
+    "web3",
+    "smart-contracts",
+    "claude",
+    "agent"
+  ],
+  "author": "HyperKit Labs <hyperkitlab@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hyperkit-Labs/skills-sdk.git",
+    "directory": "packages/skills-solidity"
+  },
+  "homepage": "https://github.com/Hyperkit-Labs/skills-sdk#readme",
+  "bugs": {
+    "url": "https://github.com/Hyperkit-Labs/skills-sdk/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  }
+}
