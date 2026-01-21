@@ -61,12 +61,14 @@ npm run generate:openzeppelin
 
 | Package                        | Version | Description                  |
 | ------------------------------ | ------- | ---------------------------- |
-| `@hyperkitlab/skills-solidity` | 0.1.0   | OpenZeppelin Solidity skills |
-| `@hyperkitlab/skills-move`     | 0.1.0   | Sui & Aptos Move skills      |
-| `@hyperkitlab/skills-parsers`    | 0.1.0   | Web3 documentation parsers   |
-| `@hyperkitlab/skills-validators` | 0.1.0   | 3-tier validation system     |
-| `@hyperkitlab/skills-bundler`    | 0.1.0   | SKILL.md assembler           |
-| `@hyperkitlab/skills-cli`        | 0.1.0   | Command-line tools           |
+| `@hyperkitlab/skills-solidity` | 1.0.0   | OpenZeppelin Solidity skills |
+| `@hyperkitlab/skills-move`     | 1.0.0   | Sui & Aptos Move skills      |
+| `@hyperkitlab/skills-parsers`    | 1.0.0   | Web3 documentation parsers   |
+| `@hyperkitlab/skills-validators` | 1.0.0   | 3-tier validation system     |
+| `@hyperkitlab/skills-bundler`    | 1.0.0   | SKILL.md assembler           |
+| `@hyperkitlab/skills-cli`        | 1.0.0   | Command-line tools           |
+
+
 
 ---
 
@@ -216,7 +218,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 - ✅ OpenZeppelin parser working
 - ✅ 3-tier validation complete
 - ✅ First SKILL.md generated
-- ⏳ npm package published
+- ✅ npm package published
 
 ### v1.0 (Week 6)
 
@@ -238,6 +240,7 @@ Apache-2.0 © [HyperKit Labs](https://hyperionkit.xyz)
 - [npm Package](https://www.npmjs.com/package/@hyperkitlab/skills-solidity)
 - [Documentation](https://github.com/Hyperkit-Labs/skills-sdk#readme)
 - [Issues](https://github.com/Hyperkit-Labs/skills-sdk/issues)
+- [Agent Skills Registry](https://skills.sh/hyperkit-labs/skills-sdk)
 - [Agent Skills Standard](https://agentskills.io)
 - [HyperKit Labs](https://hyperionkit.xyz)
 
