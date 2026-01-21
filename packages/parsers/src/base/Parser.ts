@@ -1,7 +1,7 @@
 // Base Parser interface - to be implemented by provider-specific parsers
 export interface Parser {
   fetchLatestVersion(): Promise<string>;
-  extractContracts(url: string): Promise<DocEntry[]>;
+  extractDocs(url?: string): Promise<DocEntry[]>;
 }
 
 export interface DocEntry {
