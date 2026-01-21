@@ -1,6 +1,6 @@
 {
-  "name": "@skills-sdk/bundler",
-  "version": "0.1.0",
+  "name": "@hyperkitlab/skills-bundler",
+  "version": "1.0.0",
   "description": "SKILL.md assembler with progressive disclosure and token optimization",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,6 +17,9 @@
   ],
   "author": "HyperKit Labs <Hyperkitdev@gmail.com>",
   "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "js-tiktoken": "^1.0.21",
     "mustache": "^4.2.0"
