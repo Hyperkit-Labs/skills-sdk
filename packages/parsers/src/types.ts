@@ -14,8 +14,11 @@ export interface DocEntry {
   category: string;
 }
 
+import { Cache } from './cache/Cache';
+
 export interface ParserOptions {
   cacheEnabled?: boolean;
   cacheTTL?: number;
   timeout?: number;
+  cache?: Cache;
 }
