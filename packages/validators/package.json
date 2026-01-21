@@ -1,6 +1,6 @@
 {
-  "name": "@skills-sdk/validators",
-  "version": "0.1.0",
+  "name": "@hyperkitlab/skills-validators",
+  "version": "1.0.0",
   "description": "3-tier validation system for SKILL.md files: schema, compilation, and agent integration",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,6 +17,9 @@
   ],
   "author": "HyperKit Labs <Hyperkitdev@gmail.com>",
   "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "ajv": "^8.12.0",
     "fast-uri": "^3.1.0",
