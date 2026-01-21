@@ -21,9 +21,9 @@ describe('OpenZeppelinParser', () => {
     });
   });
 
-  describe('extractContracts', () => {
+  describe('extractDocs', () => {
     it('should extract contract entries from OpenZeppelin docs', async () => {
-      const entries = await parser.extractContracts();
+      const entries = await parser.extractDocs();
       expect(Array.isArray(entries)).toBe(true);
       if (entries.length > 0) {
         expect(entries[0]).toHaveProperty('name');
@@ -35,7 +35,7 @@ describe('OpenZeppelinParser', () => {
     }, 30000);
 
     it('should handle errors gracefully', async () => {
-      const entries = await parser.extractContracts('http://invalid-url.com');
+      const entries = await parser.extractDocs('http://invalid-url.com');
       expect(Array.isArray(entries)).toBe(true);
       expect(entries.length).toBe(0);
     });
