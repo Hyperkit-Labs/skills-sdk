@@ -19,8 +19,9 @@
   "license": "Apache-2.0",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
-    "undici": "^6.2.1",
-    "playwright": "^1.40.1"
+    "ioredis": "^5.9.2",
+    "playwright": "^1.40.1",
+    "undici": "^6.2.1"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",
