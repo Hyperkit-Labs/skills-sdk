@@ -1,0 +1,20 @@
+# These owners will be the default owners for everything in the repo.
+# Unless a later match takes precedence, @Hyperkit-Labs/core-team will be requested for review when someone opens a pull request.
+* @Hyperkit-Labs/core-team
+
+# Order is important; the last matching pattern takes the most precedence.
+
+# Infrastructure
+/.github/ @Hyperkit-Labs/devops
+/scripts/ @Hyperkit-Labs/devops
+/Dockerfile @Hyperkit-Labs/devops
+
+# Packages
+/packages/parsers/ @Hyperkit-Labs/parsers-team
+/packages/validators/ @Hyperkit-Labs/validators-team
+/packages/bundler/ @Hyperkit-Labs/bundler-team
+/packages/skills-solidity/ @Hyperkit-Labs/skills-team
+
+# Documentation
+/*.md @Hyperkit-Labs/docs
+/docs/ @Hyperkit-Labs/docs
