@@ -1,6 +1,6 @@
 {
     "name": "skills-sdk",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Web3 documentation aggregation pipeline that transforms blockchain provider docs into AI-agent-ready SKILL.md knowledge packs",
     "private": true,
     "workspaces": [
