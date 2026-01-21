@@ -1,6 +1,6 @@
 {
   "name": "@hyperkitlab/skills-solidity",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "OpenZeppelin Solidity skills for AI agents - Auto-synced, validated blockchain knowledge",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -27,6 +27,9 @@
   ],
   "author": "HyperKit Labs <hyperkitlab@gmail.com>",
   "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Hyperkit-Labs/skills-sdk.git",
