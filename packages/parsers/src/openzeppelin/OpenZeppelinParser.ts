@@ -18,7 +18,7 @@ export class OpenZeppelinParser implements Parser {
     }
   }
 
-  async extractContracts(_url?: string): Promise<DocEntry[]> {
+  async extractDocs(_url?: string): Promise<DocEntry[]> {
 
     const entries: DocEntry[] = [];
 
