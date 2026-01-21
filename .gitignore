@@ -45,3 +45,5 @@ plan/
 .cache/
 .parcel-cache/
 .eslintcache
+.npmrc
+./../DELIVERY_SUMMARY.md
