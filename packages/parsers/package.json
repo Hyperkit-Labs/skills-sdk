@@ -1,6 +1,6 @@
 {
-  "name": "@skills-sdk/parsers",
-  "version": "0.1.0",
+  "name": "@hyperkitlab/skills-parsers",
+  "version": "1.0.0",
   "description": "Web3 documentation parsers for extracting structured content from blockchain provider docs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,6 +17,9 @@
   ],
   "author": "HyperKit Labs <Hyperkitdev@gmail.com>",
   "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
     "ioredis": "^5.9.2",
