@@ -31,22 +31,23 @@
     /* Path Aliases */
     "baseUrl": ".",
     "paths": {
-      "@skills-sdk/parsers": [
+      "@hyperkitlab/skills-parsers": [
         "packages/parsers/src"
       ],
-      "@skills-sdk/validators": [
+      "@hyperkitlab/skills-validators": [
         "packages/validators/src"
       ],
-      "@skills-sdk/bundler": [
+      "@hyperkitlab/skills-bundler": [
         "packages/bundler/src"
       ],
-      "@skills-sdk/cli": [
+      "@hyperkitlab/skills-cli": [
         "packages/cli/src"
       ]
     }
   },
   "include": [
-    "packages/*/src/**/*"
+    "packages/*/src/**/*",
+    "scripts/**/*"
   ],
   "exclude": [
     "node_modules",
