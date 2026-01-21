@@ -1,6 +1,6 @@
 {
     "name": "@hyperkitlab/skills-move",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "HyperKit Move Skills - High-quality, AI-ready documentation for Sui and Aptos development",
     "main": "index.js",
     "scripts": {
